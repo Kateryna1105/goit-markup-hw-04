@@ -73,7 +73,8 @@ body {
 }
 
 .links {
-    margin-left: 318px;
+    margin-left: auto;
+    align-items: center;
 }
 
 .item-phone {
@@ -132,33 +133,24 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: #757575;
+gap: 10px;
 }
 
-.link-mail,
-.link-phone {
-display: flex;
-padding-top: 32px;
-margin-right: 10px; 
-fill:#757575;
-     } 
-
-.link-mail:hover .link-mail-item,
-.link-mail:focus .link-mail-item {
+.link-mail-item:hover ,
+.link-mail-item:focus  {
  fill: #2196F3;
 }
 
+.item-mailto {
+    margin-right: 30px;
+    
+}
 
-/* .mail::before {
-    content: "";
-    margin-right: 10px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 16px;
-    height: 12px;
-    background-image: url(../img/icon-mail.png);
-    background-size: contain;
-} */
+.link-mail-item {
+    fill: #757575;
+}
+
+
 
 .nav-link:hover, 
 .nav-link:focus{
@@ -169,9 +161,9 @@ fill:#757575;
     display: flex;
 }
 
-.links .item+.item {
+/* .links .item+.item {
     margin-left: 50px;
-}
+} */
 
 .hero{
 padding-top: 200px;
@@ -188,11 +180,6 @@ background-image: linear-gradient(
     rgba(47, 48, 58, 0.4)),
     url(../img/bg-hero.jpg); 
 }
-
-/*linear-gradient ( 
-    to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)) */
 
 .hero-title {
 font-weight: 900;
@@ -241,7 +228,37 @@ background: #2196F3;
     margin-right: 30px;
 }
 
+.particulars-item::before {
+    content: '';
+    display: block;
+    height: 120px;   
+    border-radius: 4px;
+    background-size: 70px 70px; 
+    background-repeat: no-repeat;
+    background-color: #F5F4FA;
+    background-position: center;
+}
+
+.icon-antenna::before {
+background-image: url(../img/antenna.svg);
+}
+
+.icon-clock::before {
+background-image: url(../img/clock.svg);
+}
+
+.icon-diagram::before {
+background-image: url(../img/diagram.svg);
+}
+
+.icon-astronaut::before {
+background-image: url(../img/astronaut.svg);
+}
+
+
+
 .Particular-qualities-title {
+    margin-top: 30px;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
